@@ -1,0 +1,48 @@
+{
+    "name": "fostercommerce/commerce-stripe-paymentsource",
+    "description": "Manage payment sources for the Craft Commerce Stripe payment gateway",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "Craft Commerce",
+        "Stripe",
+        "craft-plugin",
+        "commerce-stripe-paymentsource"
+    ],
+    "support": {
+        "docs": "https://github.com/commerce-stripe-paymentsource/commerce-stripe-paymentsource/blob/master/README.md",
+        "issues": "https://github.com/commerce-stripe-paymentsource/commerce-stripe-paymentsource/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Foster Commerce",
+            "homepage": "https://fostercommerce.com"
+        }
+    ],
+    "require": {
+      "craftcms/cms": "^3.1.5",
+      "craftcms/commerce": "^2.1.2",
+      "craftcms/commerce-stripe": "^1.2",
+      "stripe/stripe-php": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+          "fostercommerce\\commercestripepaymentsource\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Stripe for Craft Commerce Payment Sources",
+        "handle": "commerce-stripe-paymentsource",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/commerce-stripe-paymentsource/commerce-stripe-paymentsource/master/CHANGELOG.md",
+        "components": {
+            "service": "fostercommerce\\commercestripepaymentsource\\services\\CommercestripepaymentsourceService"
+        },
+        "class": "fostercommerce\\commercestripepaymentsource\\Plugin"
+    }
+}
